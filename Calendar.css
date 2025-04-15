@@ -1,0 +1,131 @@
+.Calendar{
+    margin-left: 0px;
+    margin-top:50px;
+    /* border:2px solid rgb(47, 164, 227); */
+    box-shadow: 2px 2px 5px rgba(149, 149, 149, 0.558);
+    border-radius: 20px;
+    width:30%;
+    min-width:330px;
+    max-width: 600px;
+    /* height:60vw; */
+    min-height: 420px;
+    /* max-height: 60vh; */
+    padding:30px;
+    /* font-size: 2vw; */
+    background:linear-gradient( to right bottom, white, #FEFBF7);
+
+
+    /* darkmode */
+    
+    
+}
+.Calendar header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+.Calendar .btns button{
+    cursor: pointer;
+    padding:10px 5px;
+    width:40px;
+    /* height: 10px; */
+    /* background-color: #111; */
+    /* color: white; */
+    border: 1px solid white;
+    border-radius:50%;
+
+    &:active{
+        transform: scale(0.95) ;
+        transform-origin: center; 
+    }
+}
+.Calendar .dates, .days{
+    
+    
+    /* height: 88%; */
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    row-gap: 1vw;
+
+}
+.Calendar .days{
+    /* padding-bottom: 30px; */
+    color:black;
+    color:rgb(91, 178, 209);
+   font-weight:500;
+
+}
+.dates li:hover{
+    background-color: #cdcdcd46;
+    cursor: pointer;
+}
+/* .Calendar .days{
+    display: flex;
+    flex-wrap: nowrap;
+
+
+
+} */
+
+.Calendar ul{
+    /* gap:10px; */
+}
+.Calendar ul li{
+    /* width: calc(100%/7 ); */
+    padding: 5px 0 0  0;
+    height: 30px;
+    width:30px;
+   
+
+    list-style: none;
+    text-align: center;
+    /* border:1px solid black; */
+    margin:10px 0px;
+    border-radius: 50%;
+
+}
+.inactive{
+    color:#02020269;
+}
+.dates #currDate{
+    background-color:rgb(99, 190, 226);
+    color: white;
+    
+    &:hover{
+        background-color:purple;
+    }
+}
+@media (min-width:1000px){
+    .Calendar{
+        font-size: 22px;
+    }
+    .Calendar .days{
+        margin-bottom:10px ;
+    }
+    .Calendar .dates li{
+        /* padding-top:0; */
+        margin: 10px 0 10px 0;
+        height: 35px;
+        width:35px;
+        
+    }
+}
+@media(max-width:645px ){
+    .Calendar{
+        width:95%
+    }
+}
+
+.dark-Cal{
+    background:linear-gradient(to right bottom ,rgb(80, 80, 80),rgb(40, 40, 40));
+}
+.dark-Cal .dates, .dark-Cal header{
+    color:rgb(220, 220, 220)
+    
+}
+.dark-Cal button{
+    background-color: #111;
+    color:white;
+   
+}
