@@ -1,0 +1,60 @@
+.Tasks{
+    /* height:50vh; */
+    padding: 10px;
+    margin:50px 0px;
+    background:linear-gradient( to right bottom, white, #FEFBF7);
+    width:40%;
+    /* min-width: 400px; */
+    /* border:2px solid rgb(47, 164, 227); */
+    box-shadow: 2px 2px 5px rgba(149, 149, 149, 0.558);
+    border-radius: 0 20px 20px 0;
+    
+}
+.Tasks h2{
+    margin:20px 0px 20px 10px;
+    color:rgb(104, 149, 182);
+}
+.Tasks input{
+    padding: 5px;
+    
+    margin:0px 10px 10px 10px
+}
+.Tasks button{
+    cursor: pointer;
+    padding:5px 10px;
+    color:white;
+    /* background-color: white; */
+    border:none;
+    border-radius: 5px;
+    background: linear-gradient(to right bottom, rgb(163, 208, 243),rgb(47, 157, 207));
+
+
+    &:active{
+        transform: scale(0.9);
+    }
+}
+
+@media(max-width:955px){
+    .Tasks{
+        width:38%;
+    }
+}
+@media(max-width:645px ){
+    .Tasks{
+        width:95%
+    }
+}
+.dark-Tasks{
+    background:linear-gradient(to right bottom ,rgb(80, 80, 80),rgb(40, 40, 40));
+}
+.dark-Tasks .Task{
+    color:white;
+}
+.dark-Tasks button{
+    background: linear-gradient(to right bottom, rgb(69, 173, 253),rgb(0, 123, 180));
+
+
+}
+.dark-Tasks h2{
+    color:rgb(51, 162, 242);
+}
