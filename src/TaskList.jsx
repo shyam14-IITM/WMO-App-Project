@@ -7,7 +7,16 @@ const TaskList = ({isDark}) => {
     const [inpValue, setInpValue] = useState(""); // value for controlled input element
     const [tasks, setTasks] = useState([]);// list of tasks
     
+    const handleRemove=(key) => { //  function for removal of tasks
+
+        setTasks(
+                tasks.filter((task, i) => {
+                return !(task.key == key);
+            })
+        );
     
+}
+
 
     
 
