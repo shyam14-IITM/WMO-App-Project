@@ -3,15 +3,18 @@ import Calendar from "./Calendar.jsx";
 import TaskList from "./TaskList.jsx";
 import Budget from "./Budget.jsx";
 import { useState } from "react";
+import Nav from "./Nav.jsx";
 
 
 const Home = () => {
   const [menuClicked, setMenuClicked] = useState(false);
   const [isDark, setIsDark] = useState(false);
   return (
+  
     <div className={isDark?"dark-home Home":"Home"}>
+        <Nav isDark={isDark}></Nav>
       <nav>
-        <h1 id="head">Dashboard</h1>
+        <h1 id="head">Personal Dashboard</h1>
         <div style={{ fontWeight: 100 }}>
           <i className="ri-sun-cloudy-line"> </i> 31°C Partly Cloudy
         </div>
@@ -37,6 +40,8 @@ const Home = () => {
       </nav>
 
       <div className="container-1">
+        
+        
         <Calendar isDark={isDark}></Calendar>
         <TaskList isDark={isDark}></TaskList>
       </div>

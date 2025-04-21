@@ -6,9 +6,18 @@
     width:40%;
     /* min-width: 400px; */
     /* border:2px solid rgb(47, 164, 227); */
-    box-shadow: 2px 2px 5px rgba(149, 149, 149, 0.558);
+    box-shadow: 20px 20px 40px rgba(149, 149, 149, 0.407),inset 10px 10px 20px rgba(149, 149, 149, 0.275);
     border-radius: 0 20px 20px 0;
+    position: relative;
     
+}
+.Tasks::before{
+    content:"TO-DO LIST";
+    color:white;
+    position: absolute;
+    top:-40px;
+    left: 0;
+    font-size: 30px
 }
 .Tasks h2{
     margin:20px 0px 20px 10px;
@@ -16,7 +25,8 @@
 }
 .Tasks input{
     padding: 5px;
-    
+    background-color: rgb(66, 66, 66);
+    color:skyblue;
     margin:0px 10px 10px 10px
 }
 .Tasks button{
@@ -45,16 +55,26 @@
     }
 }
 .dark-Tasks{
-    background:linear-gradient(to right bottom ,rgb(80, 80, 80),rgb(40, 40, 40));
+   
+    border-radius: 0px;
+    box-shadow :inset 10px 10px 20px rgba(149, 149, 149, 0.138);
+    border: 2px solid; border-image: linear-gradient(to right, red, yellow, green, blue) 1;
+    background:linear-gradient(to right bottom ,rgb(43, 43, 43),rgb(49, 49, 49));
 }
 .dark-Tasks .Task{
     color:white;
+    font-family: monospace;
+    font-weight: 100;
 }
 .dark-Tasks button{
-    background: linear-gradient(to right bottom, rgb(69, 173, 253),rgb(0, 123, 180));
-
-
+    /* background: linear-gradient(to right bottom, rgb(69, 173, 253),rgb(0, 123, 180)); */
+    background: linear-gradient(0deg, black,black);
+    border: 1px solid rgb(0, 157, 255);
+    /* color: rgb(0, 157, 255) */
 }
 .dark-Tasks h2{
+    color:rgb(51, 162, 242);
+}
+.dark-Tasks h4{
     color:rgb(51, 162, 242);
 }

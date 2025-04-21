@@ -30,7 +30,9 @@ const Calendar = ({isDark}) => {
       }
 
     return (
+        
         <div className={isDark?"dark-Cal Calendar ":"Calendar"}>
+
             <header>
                 <div className="current-month">
                    {months[month]} {currYear}

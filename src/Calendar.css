@@ -2,9 +2,9 @@
     margin-left: 0px;
     margin-top:50px;
     /* border:2px solid rgb(47, 164, 227); */
-    box-shadow: 2px 2px 5px rgba(149, 149, 149, 0.558);
+    box-shadow: 20px 20px 40px rgba(149, 149, 149, 0.407),inset 10px 10px 20px rgba(149, 149, 149, 0.275);
     border-radius: 20px;
-    width:30%;
+    width:20%;
     min-width:330px;
     max-width: 600px;
     /* height:60vw; */
@@ -13,11 +13,33 @@
     padding:30px;
     /* font-size: 2vw; */
     background:linear-gradient( to right bottom, white, #FEFBF7);
-
-
+    position: relative;
+    z-index:2;
     /* darkmode */
     
     
+}
+
+.Calendar::before{
+    content:"CALENDAR";
+    color:white;
+    position: absolute;
+    top:-40px;
+    left: 0;
+    font-size: 30px
+}
+.Calendar-container{
+    ;
+}
+.Calendar-container::before{
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    z-index: 1;
+    top:0; left:0;
+    width: 110%;
+    height: 110%;
+    background-color: blue;
 }
 .Calendar header{
     display: flex;
@@ -118,7 +140,11 @@
 }
 
 .dark-Cal{
-    background:linear-gradient(to right bottom ,rgb(80, 80, 80),rgb(40, 40, 40));
+    box-shadow: none;
+    /* box-shadow :inset 10px 10px 20px rgba(149, 149, 149, 0.138),0 0 20px skyblue; */
+    background:linear-gradient(to right bottom ,rgb(41, 41, 41),rgb(40, 40, 40));
+   border-radius:0;
+    border: 2px solid; border-image: linear-gradient(to right, red, yellow, green, blue) 1;
 }
 .dark-Cal .dates, .dark-Cal header{
     color:rgb(220, 220, 220)

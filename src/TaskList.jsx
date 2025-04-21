@@ -1,5 +1,5 @@
 import "./TaskList.css"
-import Task from "./Task.jsx"
+import "./Task.css"
 import {motion,AnimatePresence} from 'framer-motion';
 import { useRef, useState } from "react";
 import {v4 as uuidv4} from 'uuid';
