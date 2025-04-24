@@ -2,7 +2,7 @@ import "./TaskList.css"
 import "./Task.css"
 import {motion,AnimatePresence} from 'framer-motion';
 import { useRef, useState } from "react";
-import {v4 as uuidv4} from 'uuid';
+import {v4 as uuidv4} from 'uuid';// for unique keys of list items
 const TaskList = ({isDark}) => {
     const [inpValue, setInpValue] = useState(""); // value for controlled input element
     const [tasks, setTasks] = useState([]);// list of tasks
@@ -24,17 +24,24 @@ const TaskList = ({isDark}) => {
         <div className={isDark?"dark-Tasks Tasks":"Tasks"}>
             <h2>Your Tasks</h2>
 
-            <input type="text" value={inpValue} onChange={(event) => {
+            <input type="text" 
+            value={inpValue} 
+            onChange={(event) => {
                 setInpValue(event.target.value);
-            }} placeholder="Enter a new task" />
+            }} 
+            placeholder="Enter a new task" />
 
-            <button onClick={() => {
-                setTasks((prevTasks) => {
+            <button 
+            onClick={() => {
+
+                inpValue!="" && setTasks((prevTasks) => {
+
                     return [...prevTasks, {label:inpValue,key:uuidv4()}];
                 })
                 setInpValue("");
                 console.log(tasks);
-            }} >Add</button>
+            }} >
+                Add</button>
             
 
             <AnimatePresence>

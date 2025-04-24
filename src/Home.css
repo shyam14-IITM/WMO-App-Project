@@ -1,49 +1,33 @@
 .Home{
-    /* color:white; */
+
     background-color: rgb(14, 143, 194);
-    background: url("./home-bg.jpg");
+    background: url("/home-bg.jpg");
+    
     background-size: cover;
     height: 100%;
     width:100vw;
     padding:0 0 0 0;
     overflow-x: hidden;
     z-index: 0;
-    /* background: linear-gradient(to right bottom,#fff,#F9F7F3); */
-    /* background-color: rgb(176, 206, 220); */
-    /* box-shadow: inset 0px 0px 40px #97cbff; */
+    
 }
 nav{
+    position: relative;
     display: flex;
     justify-content: space-between;
     gap:30px;
-    align-items: baseline ;
+    align-items: baseline ; z-index:5;
     padding:0 2% 20px 2%;
     font-size: 25px;
     font-weight: 700;
     color: white;
-    /* border-bottom: 2px solid rgb(106, 158, 211); */
-    /* background: linear-gradient(to right bottom, rgb(241, 245, 246), rgb(214, 220, 224)); */
+    
 }
 .ri-more-2-line{
     position: relative;
     cursor: pointer;
 }
-/* nav .ri-menu-line::after{
-    content:"";
-    
-    width:300px;
-    height:10%;
-    background-color:white;
-    border:1.5px solid black;
-    background: url("vite.svg");
-    background-repeat: no-repeat;
-    position: absolute;
-    top:60px;
-    right:40px;
 
-
-
-} */
  .menu{
     border-radius: 10px;
     width:300px;
@@ -51,9 +35,7 @@ nav{
     color:black;
     background-color:white;
     border:1.5px solid rgba(0, 183, 255, 0.489);
-    /* box-shadow:inset 0px 0px 5px rgb(144, 168, 192); */
-    /* background: url("vite.svg"); */
-    /* background-repeat: no-repeat; */
+  
     position: absolute;
     top:40px;
     right:10px;
@@ -80,18 +62,17 @@ nav{
 #head{
     position: relative;
     /* font-size: 10px; */
-    top: 10vh;
-    z-index: 2;
+    top: 15vh;
+   
     width: 20vw;
-    /* align-self: flex-end; */
-    /* flex-shrink; */
+   
     margin: 10px 10px 100px 10px;
     padding:10px ;
     font-weight: 100;
     font-size: 60px;
     color:#fff;
     text-shadow: 0 0 5px rgba(242, 241, 241, 0.351);
-    /* border:1px solid white; */
+   
 }
 .container-1{
     display: flex;
@@ -111,15 +92,20 @@ nav{
 
 .container-2{
     margin:200px 5vw 30px 10vw ;
-    /* margin-left: ; */
+ 
     padding-left: 5%;
-    max-width: 70vw;
+
+
     margin-left: 30vw;
 }
 
 .dark-home{
     box-shadow: inset 0px 0px 20px #97cbff58;
     background: linear-gradient(0deg,black,rgb(28, 28, 28));
+     
+}
+.quote{
+    font-weight:100;
 }
 .dark-home nav{
     color:rgb(220, 220, 220)
@@ -129,7 +115,23 @@ nav{
 }
 .dark-home .menu{
     background-color:rgb(5, 5, 5);
+   
     box-shadow:inset 0px 0px 10px #97cbff58;
 
     color: white;
+}
+@media(max-width:1015px){
+    .container-2{
+        width: 90vw;
+        max-width: 90vw;
+        margin-left: 50px;
+    }
+    #head{
+        font-size: 40px;
+    }
+}
+@media (max-width:540px){
+    .quote{
+        display: none;
+    }
 }

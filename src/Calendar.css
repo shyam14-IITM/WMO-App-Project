@@ -120,7 +120,7 @@
 }
 @media (min-width:1000px){
     .Calendar{
-        font-size: 22px;
+        /* font-size: 22px; */
     }
     .Calendar .days{
         margin-bottom:10px ;
@@ -142,7 +142,7 @@
 .dark-Cal{
     box-shadow: none;
     /* box-shadow :inset 10px 10px 20px rgba(149, 149, 149, 0.138),0 0 20px skyblue; */
-    background:linear-gradient(to right bottom ,rgb(41, 41, 41),rgb(40, 40, 40));
+    background:linear-gradient(to right bottom ,rgb(39, 39, 39),rgb(0, 0, 0));
    border-radius:0;
     border: 2px solid; border-image: linear-gradient(to right, red, yellow, green, blue) 1;
 }
@@ -150,6 +150,11 @@
     color:rgb(220, 220, 220)
     
 }
+.dark-Cal .inactive{
+    color:rgba(128, 128, 128, 0.478)
+
+}
+
 .dark-Cal button{
     background-color: #111;
     color:white;

@@ -23,10 +23,11 @@ const Budget = ({isDark}) => {
                 </div>
                     <div className='upcoming'>
                         <h5>Upcoming Expenditures</h5>
+                        <input type="text" placeholder='Add an item' /> &nbsp; &nbsp; <button>Add</button>
                         <div className='item'>
                             Macbook Air 
                         </div>
-                        <div>
+                        <div className='item'>
                             Electricity bill
                         </div>
                         
@@ -36,7 +37,7 @@ const Budget = ({isDark}) => {
                         <div className="item">
                             Spent: $2048
                         </div>
-                        <div>
+                        <div className='item'>
                             Saved: $1534
                         </div>
                     </div>

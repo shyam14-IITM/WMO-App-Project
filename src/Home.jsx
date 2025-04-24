@@ -16,7 +16,10 @@ const Home = () => {
       <nav>
         <h1 id="head">Personal Dashboard</h1>
         <div style={{ fontWeight: 100 }}>
-          <i className="ri-sun-cloudy-line"> </i> 31°C Partly Cloudy
+          <i className="ri-sun-cloudy-line"> </i> Weather: 31°C  <br /> 
+        </div>
+        <div className="quote">
+        "Start where you are. Use what you have. Do what you can." — Arthur Ashe
         </div>
 
         <i onClick={() => {

@@ -5,16 +5,34 @@ import gsap from 'gsap';
 
 
 function App() {
-  const [count, setCount] = useState(0);
-  useGSAP(()=>{
-    gsap.from(".Calendar ,.Budget ,.Tasks",{
+  
+  useGSAP(()=>{          //adding entry animation
+    gsap.from(".Calendar,.Tasks , nav",{
       y:50,
       duration:0.4,
       stagger:0.4,
       opacity:0,
-      delay:0.5
+      delay:0.5,
+    
     })
     ;
+    gsap.from(".Budget",{
+      y:50,
+      duration:0.4,
+      stagger:0.4,
+      opacity:0,
+      delay:0.5,
+      scrollTrigger:{
+        scroller:"body",
+        trigger:".container-2",
+        markers:true,
+        start:"top center",
+        end:"top 40%"
+
+
+      }
+    
+    })
     gsap.from("#head, .Nav a",{
       x:-50,
       opacity:0,
@@ -27,7 +45,7 @@ function App() {
 
   return (
     <>
-     <Home></Home>
+     <Home></Home>       
     </>
   )
 }

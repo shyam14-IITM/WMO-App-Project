@@ -36,8 +36,8 @@
     /* background-color: white; */
     border:none;
     border-radius: 5px;
-    background: linear-gradient(to right bottom, rgb(163, 208, 243),rgb(47, 157, 207));
-
+    /* background: linear-gradient(to right bottom, rgb(163, 208, 243),rgb(47, 157, 207)); */
+    background-color: rgb(35, 182, 240);
 
     &:active{
         transform: scale(0.9);
@@ -59,7 +59,7 @@
     border-radius: 0px;
     box-shadow :inset 10px 10px 20px rgba(149, 149, 149, 0.138);
     border: 2px solid; border-image: linear-gradient(to right, red, yellow, green, blue) 1;
-    background:linear-gradient(to right bottom ,rgb(43, 43, 43),rgb(49, 49, 49));
+    background:linear-gradient(to right bottom ,rgb(39, 39, 39),rgb(0, 0, 0));
 }
 .dark-Tasks .Task{
     color:white;

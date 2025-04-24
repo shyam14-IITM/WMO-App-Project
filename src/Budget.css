@@ -4,19 +4,34 @@
     border-radius: 25px;
     /* border:2px solid rgb(47, 164, 227); */
     box-shadow: 2px 2px 5px rgba(149, 149, 149, 0.558);
-    background-color: rgba(255, 255, 255, 0.525);
-    backdrop-filter: blur(30px);
+    background-color: white;
+    /* backdrop-filter: blur(30px); */
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     height: 600px;
     max-width: 70vw;
+    overflow-x: hidden;
 
+}
+.graph-div input{
+    background-color: #111;
+    margin:5px 0;
+    padding:5px;
+}
+.graph-div button{
+    padding:5px;
+    background-color: rgb(35, 182, 240);
+    border-radius: 5px;
+    border:none;
+    color:white
 }
 .graph-div{
     padding :20px;
     width:60%;
+    min-width: 400px;
     height:100%;
-    border-right:1px solid black;
+    /* border-right:1px solid black; */
     display: flex;
     flex-direction: column;
     gap:20px
@@ -31,7 +46,8 @@
 }
 .info {
     padding:10px;
-    width:40%
+    width:40%;
+    min-width: 300px;
 }
 .info #blnce{
     position: relative;
@@ -66,8 +82,14 @@
 
 .emi{
     border: 1px solid rgb(170, 166, 35);
-    padding:10px
+    padding:10px;
+    max-width: 100%;
     
+}
+.item{
+    background-color: rgb(162, 218, 240);
+    padding:5px;
+    border-radius: 5px;
 }
 .emi h4{
     color: yellow;
@@ -85,8 +107,19 @@
 
 
 .dark-Budget{
-    color:white;
-    box-shadow :inset 10px 10px 20px rgba(149, 149, 149, 0.138);
-    background:linear-gradient(to right bottom ,rgb(41, 41, 41),rgb(40, 40, 40));
 
+    color:white;
+    border-radius: 0;
+    box-shadow :inset 10px 10px 20px rgba(149, 149, 149, 0.138);
+    background:linear-gradient(to right bottom ,rgb(39, 39, 39),rgb(0, 0, 0));
+    border: 2px solid; border-image: linear-gradient(to right, red, yellow, green, blue) 1;
+}
+.dark-Budget .item{
+    background-color: rgb(57, 57, 57);
+}
+.dark-Budget button, .dark-Budget input{
+    background: linear-gradient(0deg, black,black);
+    border: 1px solid rgb(0, 157, 255);
+    color:white;
+    
 }
